@@ -1,0 +1,42 @@
+{
+  "domain": "target-clock-calibration",
+  "version": 1,
+  "sample_id": "public-sample-014",
+  "actors": [
+    "运动员",
+    "电子靶系统",
+    "裁判与技术官员",
+    "纪录认证人员"
+  ],
+  "facts": [
+    "女子十米气步枪资格赛产生新的亚洲纪录成绩",
+    "资格赛成绩决定后续晋级",
+    "纪录发布需要依赖正式竞赛规则与设备数据"
+  ],
+  "constraints": [
+    "靶机校准登记",
+    "时钟漂移监测",
+    "离线事件排序",
+    "成绩影响范围"
+  ],
+  "records": [
+    {
+      "id": "target-clock-calibration-source",
+      "kind": "source",
+      "label": "女子十米气步枪资格赛产生新的亚洲纪录成绩",
+      "status": "active"
+    },
+    {
+      "id": "target-clock-calibration-review",
+      "kind": "review",
+      "label": "靶机校准登记",
+      "status": "pending"
+    },
+    {
+      "id": "target-clock-calibration-history",
+      "kind": "history",
+      "label": "纪录发布需要依赖正式竞赛规则与设备数据",
+      "status": "historical"
+    }
+  ]
+}
