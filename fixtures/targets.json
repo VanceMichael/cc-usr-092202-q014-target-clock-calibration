@@ -1,0 +1,48 @@
+{
+  "targets": [
+    {
+      "lane": "A-01",
+      "device_id": "EST-A01",
+      "firmware": "EST-5.3.0",
+      "registered_at": "2026-09-27T08:15:00.000Z",
+      "calibration_source": "GPS-PPS-01",
+      "calibrated_at": "2026-09-27T08:20:00.000Z",
+      "baseline_offset_ms": 12.0,
+      "clock_jump_detected": false,
+      "open_incident": false
+    },
+    {
+      "lane": "A-02",
+      "device_id": "EST-A02",
+      "firmware": "EST-5.3.0",
+      "registered_at": "2026-09-27T08:15:00.000Z",
+      "calibration_source": "GPS-PPS-01",
+      "calibrated_at": "2026-09-27T08:20:00.000Z",
+      "baseline_offset_ms": 15.0,
+      "clock_jump_detected": false,
+      "open_incident": false
+    },
+    {
+      "lane": "A-03",
+      "device_id": "EST-A03",
+      "firmware": "EST-5.3.0",
+      "registered_at": "2026-09-27T08:15:00.000Z",
+      "calibration_source": "GPS-PPS-01",
+      "calibrated_at": "2026-09-27T08:20:00.000Z",
+      "baseline_offset_ms": 20.0,
+      "clock_jump_detected": false,
+      "open_incident": false
+    },
+    {
+      "lane": "A-04",
+      "device_id": "EST-A04",
+      "firmware": "EST-4.9.0",
+      "registered_at": "2026-09-27T08:15:00.000Z",
+      "calibration_source": null,
+      "calibrated_at": null,
+      "baseline_offset_ms": null,
+      "clock_jump_detected": true,
+      "open_incident": true
+    }
+  ]
+}

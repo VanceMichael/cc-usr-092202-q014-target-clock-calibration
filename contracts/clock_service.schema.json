@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "电子靶时钟校验服务数据契约",
+  "description": "约束 fixtures/ 下 rules、targets、telemetry、claims 四份样例资料的结构；所有成绩事件必须同时携带设备时间与接收时间。",
+  "type": "object",
+  "definitions": {
+    "timestamp": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+    },
+    "rules": {
+      "type": "object",
+      "required": ["match", "thresholds", "approved_firmware", "calibration_sources", "inspection_checks"],
+      "properties": {
+        "match": {
+          "type": "object",
+          "required": ["id", "name", "start", "end", "inspection_time"],
+          "properties": {
+            "id": {"type": "string", "minLength": 1},
+            "name": {"type": "string", "minLength": 1},
+            "start": {"$ref": "#/definitions/timestamp"},
+            "end": {"$ref": "#/definitions/timestamp"},
+            "inspection_time": {"$ref": "#/definitions/timestamp"}
+          }
+        },
+        "thresholds": {
+          "type": "object",
+          "required": [
+            "warn_offset_ms",
+            "critical_offset_ms",
+            "warn_drift_ppm",
+            "critical_drift_ppm",
+            "max_resync_gap_s",
+            "max_clock_jump_s"
+          ],
+          "properties": {
+            "warn_offset_ms": {"type": "number", "exclusiveMinimum": 0},
+            "critical_offset_ms": {"type": "number", "exclusiveMinimum": 0},
+            "warn_drift_ppm": {"type": "number", "exclusiveMinimum": 0},
+            "critical_drift_ppm": {"type": "number", "exclusiveMinimum": 0},
+            "max_resync_gap_s": {"type": "number", "exclusiveMinimum": 0},
+            "max_clock_jump_s": {"type": "number", "exclusiveMinimum": 0}
+          }
+        },
+        "approved_firmware": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "calibration_sources": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "inspection_checks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "label"],
+            "properties": {
+              "id": {"type": "string", "minLength": 1},
+              "label": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    },
+    "target": {
+      "type": "object",
+      "required": ["lane", "device_id", "firmware"],
+      "properties": {
+        "lane": {"type": "string", "minLength": 1},
+        "device_id": {"type": "string", "minLength": 1},
+        "firmware": {"type": "string", "minLength": 1},
+        "registered_at": {"$ref": "#/definitions/timestamp"},
+        "calibration_source": {"type": ["string", "null"]},
+        "calibrated_at": {"type": ["string", "null"]},
+        "baseline_offset_ms": {"type": ["number", "null"]},
+        "clock_jump_detected": {"type": "boolean"},
+        "open_incident": {"type": "boolean"}
+      }
+    },
+    "sync_sample": {
+      "type": "object",
+      "required": ["lane", "seq", "master_time", "offset_ms", "source", "received_time"],
+      "properties": {
+        "lane": {"type": "string", "minLength": 1},
+        "seq": {"type": "integer", "minimum": 1},
+        "master_time": {"$ref": "#/definitions/timestamp"},
+        "offset_ms": {"type": "number"},
+        "source": {"type": "string", "minLength": 1},
+        "received_time": {"$ref": "#/definitions/timestamp"}
+      }
+    },
+    "incident": {
+      "type": "object",
+      "required": ["id", "lane", "kind", "start"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "lane": {"type": "string", "minLength": 1},
+        "kind": {"enum": ["network_outage", "manual_reset", "manual_adjustment"]},
+        "start": {"$ref": "#/definitions/timestamp"},
+        "end": {"type": ["string", "null"]},
+        "note": {"type": "string"}
+      }
+    },
+    "reinstatement": {
+      "type": "object",
+      "required": ["lane", "officer", "confirmed_at"],
+      "properties": {
+        "lane": {"type": "string", "minLength": 1},
+        "officer": {"type": "string", "minLength": 1},
+        "confirmed_at": {"$ref": "#/definitions/timestamp"},
+        "note": {"type": "string"}
+      }
+    },
+    "score_event": {
+      "type": "object",
+      "required": ["lane", "shot_seq", "device_time", "received_time", "score"],
+      "properties": {
+        "lane": {"type": "string", "minLength": 1},
+        "shot_seq": {"type": "integer", "minimum": 1},
+        "device_time": {"$ref": "#/definitions/timestamp"},
+        "received_time": {"$ref": "#/definitions/timestamp"},
+        "score": {"type": "number", "minimum": 0},
+        "inner_ten": {"type": "boolean"}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "required": ["id", "label", "lane", "athlete", "claimed_total", "shot_count"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "label": {"type": "string", "minLength": 1},
+        "lane": {"type": "string", "minLength": 1},
+        "athlete": {"type": "string", "minLength": 1},
+        "claimed_total": {"type": "number", "exclusiveMinimum": 0},
+        "shot_count": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}

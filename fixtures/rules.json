@@ -1,0 +1,47 @@
+{
+  "match": {
+    "id": "sample-w10arq-2026",
+    "name": "女子十米气步枪资格赛（公开样例）",
+    "start": "2026-09-27T09:00:00.000Z",
+    "end": "2026-09-27T10:15:00.000Z",
+    "inspection_time": "2026-09-27T08:55:00.000Z"
+  },
+  "thresholds": {
+    "warn_offset_ms": 100.0,
+    "critical_offset_ms": 250.0,
+    "warn_drift_ppm": 50.0,
+    "critical_drift_ppm": 200.0,
+    "max_resync_gap_s": 300.0,
+    "max_clock_jump_s": 5.0
+  },
+  "approved_firmware": [
+    "EST-5.2.1",
+    "EST-5.3.0"
+  ],
+  "calibration_sources": [
+    "GPS-PPS-01",
+    "NTP-POOL-A"
+  ],
+  "inspection_checks": [
+    {
+      "id": "firmware_approved",
+      "label": "固件版本在批准清单内"
+    },
+    {
+      "id": "calibration_registered",
+      "label": "校准源与校准时间已登记"
+    },
+    {
+      "id": "baseline_offset",
+      "label": "赛前基准偏差在限值内"
+    },
+    {
+      "id": "clock_monotonic",
+      "label": "设备时钟连续无跳变"
+    },
+    {
+      "id": "no_open_incidents",
+      "label": "无未闭环的网络中断或人工复位"
+    }
+  ]
+}

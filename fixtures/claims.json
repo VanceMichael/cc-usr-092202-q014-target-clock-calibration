@@ -1,0 +1,12 @@
+{
+  "claims": [
+    {
+      "id": "CLAIM-W10ARQ-ASIA",
+      "label": "女子十米气步枪资格赛亚洲纪录申报（公开样例）",
+      "lane": "A-01",
+      "athlete": "运动员-甲（样例）",
+      "claimed_total": 630.6,
+      "shot_count": 60
+    }
+  ]
+}
