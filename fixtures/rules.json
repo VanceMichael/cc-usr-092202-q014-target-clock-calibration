@@ -1,0 +1,9 @@
+{
+  "warn_offset_ms": 50.0,
+  "isolate_offset_ms": 200.0,
+  "warn_drift_ppm": 20.0,
+  "isolate_drift_ppm": 100.0,
+  "sync_interval_s": 300.0,
+  "retransmit_grace_s": 120.0,
+  "final_sync_max_age_s": 300.0
+}

@@ -1,0 +1,635 @@
+{
+  "match": {
+    "event": "女子10米气步枪资格赛",
+    "sample_id": "public-sample-014",
+    "started_at": "2026-09-27T02:00:00Z",
+    "ended_at": "2026-09-27T03:30:00Z"
+  },
+  "firmware": [
+    {
+      "target_id": "T-07",
+      "version": "etarget-fw-8.2.1",
+      "checksum": "sha256:7d2f0a",
+      "registered_at": "2026-09-27T01:30:00Z"
+    },
+    {
+      "target_id": "T-09",
+      "version": "etarget-fw-8.2.1",
+      "checksum": "sha256:7d2f0a",
+      "registered_at": "2026-09-27T01:30:00Z"
+    },
+    {
+      "target_id": "T-12",
+      "version": "etarget-fw-8.2.0",
+      "checksum": "sha256:41be77",
+      "registered_at": "2026-09-27T01:30:00Z"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "GNSS-PRI",
+      "kind": "gnss-pps",
+      "accuracy_ms": 1.0,
+      "registered_at": "2026-09-27T01:20:00Z"
+    },
+    {
+      "source_id": "NTP-BACKUP",
+      "kind": "ntp",
+      "accuracy_ms": 8.0,
+      "registered_at": "2026-09-27T01:20:00Z"
+    }
+  ],
+  "target_sources": {
+    "T-07": "GNSS-PRI",
+    "T-09": "GNSS-PRI",
+    "T-12": "NTP-BACKUP"
+  },
+  "sync_samples": [
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T01:50:00Z",
+      "reference_time": "2026-09-27T01:50:00Z",
+      "device_time": "2026-09-27T01:50:00.004Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:00:00Z",
+      "reference_time": "2026-09-27T02:00:00Z",
+      "device_time": "2026-09-27T02:00:00.003Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:05:00Z",
+      "reference_time": "2026-09-27T02:05:00Z",
+      "device_time": "2026-09-27T02:05:00.004Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:10:00Z",
+      "reference_time": "2026-09-27T02:10:00Z",
+      "device_time": "2026-09-27T02:10:00.005Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:15:00Z",
+      "reference_time": "2026-09-27T02:15:00Z",
+      "device_time": "2026-09-27T02:15:00.003Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:20:00Z",
+      "reference_time": "2026-09-27T02:20:00Z",
+      "device_time": "2026-09-27T02:20:00.004Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:25:00Z",
+      "reference_time": "2026-09-27T02:25:00Z",
+      "device_time": "2026-09-27T02:25:00.005Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:30:00Z",
+      "reference_time": "2026-09-27T02:30:00Z",
+      "device_time": "2026-09-27T02:30:00.003Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:35:00Z",
+      "reference_time": "2026-09-27T02:35:00Z",
+      "device_time": "2026-09-27T02:35:00.004Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:40:00Z",
+      "reference_time": "2026-09-27T02:40:00Z",
+      "device_time": "2026-09-27T02:40:00.005Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:45:00Z",
+      "reference_time": "2026-09-27T02:45:00Z",
+      "device_time": "2026-09-27T02:45:00.003Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:50:00Z",
+      "reference_time": "2026-09-27T02:50:00Z",
+      "device_time": "2026-09-27T02:50:00.004Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T02:55:00Z",
+      "reference_time": "2026-09-27T02:55:00Z",
+      "device_time": "2026-09-27T02:55:00.005Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T03:00:00Z",
+      "reference_time": "2026-09-27T03:00:00Z",
+      "device_time": "2026-09-27T03:00:00.003Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T03:05:00Z",
+      "reference_time": "2026-09-27T03:05:00Z",
+      "device_time": "2026-09-27T03:05:00.004Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T03:10:00Z",
+      "reference_time": "2026-09-27T03:10:00Z",
+      "device_time": "2026-09-27T03:10:00.005Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T03:15:00Z",
+      "reference_time": "2026-09-27T03:15:00Z",
+      "device_time": "2026-09-27T03:15:00.003Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T03:20:00Z",
+      "reference_time": "2026-09-27T03:20:00Z",
+      "device_time": "2026-09-27T03:20:00.004Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-07",
+      "sampled_at": "2026-09-27T03:25:00Z",
+      "reference_time": "2026-09-27T03:25:00Z",
+      "device_time": "2026-09-27T03:25:00.005Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:00:00Z",
+      "reference_time": "2026-09-27T02:00:00Z",
+      "device_time": "2026-09-27T02:00:00.001Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:05:00Z",
+      "reference_time": "2026-09-27T02:05:00Z",
+      "device_time": "2026-09-27T02:05:00.002Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:10:00Z",
+      "reference_time": "2026-09-27T02:10:00Z",
+      "device_time": "2026-09-27T02:10:00.003Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:15:00Z",
+      "reference_time": "2026-09-27T02:15:00Z",
+      "device_time": "2026-09-27T02:15:00.001Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:20:00Z",
+      "reference_time": "2026-09-27T02:20:00Z",
+      "device_time": "2026-09-27T02:20:00.002Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:25:00Z",
+      "reference_time": "2026-09-27T02:25:00Z",
+      "device_time": "2026-09-27T02:25:00.003Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:30:00Z",
+      "reference_time": "2026-09-27T02:30:00Z",
+      "device_time": "2026-09-27T02:30:00.001Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:35:00Z",
+      "reference_time": "2026-09-27T02:35:00Z",
+      "device_time": "2026-09-27T02:35:00.002Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:40:00Z",
+      "reference_time": "2026-09-27T02:40:00Z",
+      "device_time": "2026-09-27T02:40:00.003Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:45:00Z",
+      "reference_time": "2026-09-27T02:45:00Z",
+      "device_time": "2026-09-27T02:45:00.001Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:50:00Z",
+      "reference_time": "2026-09-27T02:50:00Z",
+      "device_time": "2026-09-27T02:50:00.002Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T02:55:00Z",
+      "reference_time": "2026-09-27T02:55:00Z",
+      "device_time": "2026-09-27T02:55:00.003Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T03:00:00Z",
+      "reference_time": "2026-09-27T03:00:00Z",
+      "device_time": "2026-09-27T03:00:00.001Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T03:05:00Z",
+      "reference_time": "2026-09-27T03:05:00Z",
+      "device_time": "2026-09-27T03:05:00.002Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T03:10:00Z",
+      "reference_time": "2026-09-27T03:10:00Z",
+      "device_time": "2026-09-27T03:10:00.003Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T03:15:00Z",
+      "reference_time": "2026-09-27T03:15:00Z",
+      "device_time": "2026-09-27T03:15:00.001Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T03:20:00Z",
+      "reference_time": "2026-09-27T03:20:00Z",
+      "device_time": "2026-09-27T03:20:00.002Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T03:25:00Z",
+      "reference_time": "2026-09-27T03:25:00Z",
+      "device_time": "2026-09-27T03:25:00.003Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-12",
+      "sampled_at": "2026-09-27T01:50:00Z",
+      "reference_time": "2026-09-27T01:50:00Z",
+      "device_time": "2026-09-27T01:50:00.002Z",
+      "source_id": "NTP-BACKUP"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T01:50:00Z",
+      "reference_time": "2026-09-27T01:50:00Z",
+      "device_time": "2026-09-27T01:50:00.008Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T02:00:00Z",
+      "reference_time": "2026-09-27T02:00:00Z",
+      "device_time": "2026-09-27T02:00:00.012Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T02:05:00Z",
+      "reference_time": "2026-09-27T02:05:00Z",
+      "device_time": "2026-09-27T02:05:00.020Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T02:10:00Z",
+      "reference_time": "2026-09-27T02:10:00Z",
+      "device_time": "2026-09-27T02:10:00.030Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T02:15:00Z",
+      "reference_time": "2026-09-27T02:15:00Z",
+      "device_time": "2026-09-27T02:15:00.044Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T02:20:00Z",
+      "reference_time": "2026-09-27T02:20:00Z",
+      "device_time": "2026-09-27T02:20:00.060Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T02:25:00Z",
+      "reference_time": "2026-09-27T02:25:00Z",
+      "device_time": "2026-09-27T02:25:00.078Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T02:30:00Z",
+      "reference_time": "2026-09-27T02:30:00Z",
+      "device_time": "2026-09-27T02:30:00.098Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T02:35:00Z",
+      "reference_time": "2026-09-27T02:35:00Z",
+      "device_time": "2026-09-27T02:35:00.120Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T02:40:00Z",
+      "reference_time": "2026-09-27T02:40:00Z",
+      "device_time": "2026-09-27T02:40:00.144Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T02:45:00Z",
+      "reference_time": "2026-09-27T02:45:00Z",
+      "device_time": "2026-09-27T02:45:00.170Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T02:50:00Z",
+      "reference_time": "2026-09-27T02:50:00Z",
+      "device_time": "2026-09-27T02:50:00.202Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T03:05:00Z",
+      "reference_time": "2026-09-27T03:05:00Z",
+      "device_time": "2026-09-27T03:04:59.997Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T03:10:00Z",
+      "reference_time": "2026-09-27T03:10:00Z",
+      "device_time": "2026-09-27T03:09:59.998Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T03:15:00Z",
+      "reference_time": "2026-09-27T03:15:00Z",
+      "device_time": "2026-09-27T03:14:59.998Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T03:20:00Z",
+      "reference_time": "2026-09-27T03:20:00Z",
+      "device_time": "2026-09-27T03:19:59.999Z",
+      "source_id": "GNSS-PRI"
+    },
+    {
+      "target_id": "T-09",
+      "sampled_at": "2026-09-27T03:25:00Z",
+      "reference_time": "2026-09-27T03:25:00Z",
+      "device_time": "2026-09-27T03:24:59.999Z",
+      "source_id": "GNSS-PRI"
+    }
+  ],
+  "shots": [
+    {
+      "event_id": "T07-s1",
+      "target_id": "T-07",
+      "athlete_id": "A-101",
+      "relay": 1,
+      "shot_seq": 1,
+      "device_time": "2026-09-27T02:05:00Z",
+      "received_at": "2026-09-27T02:05:00.600Z",
+      "score": 10.5,
+      "payload_hash": "hash-07-1"
+    },
+    {
+      "event_id": "T07-s2",
+      "target_id": "T-07",
+      "athlete_id": "A-101",
+      "relay": 1,
+      "shot_seq": 2,
+      "device_time": "2026-09-27T02:35:00Z",
+      "received_at": "2026-09-27T02:35:00.600Z",
+      "score": 10.5,
+      "payload_hash": "hash-07-2"
+    },
+    {
+      "event_id": "T07-s3",
+      "target_id": "T-07",
+      "athlete_id": "A-101",
+      "relay": 1,
+      "shot_seq": 3,
+      "device_time": "2026-09-27T03:05:00Z",
+      "received_at": "2026-09-27T03:05:00.600Z",
+      "score": 10.5,
+      "payload_hash": "hash-07-3"
+    },
+    {
+      "event_id": "T09-s1",
+      "target_id": "T-09",
+      "athlete_id": "A-204",
+      "relay": 1,
+      "shot_seq": 1,
+      "device_time": "2026-09-27T02:05:00Z",
+      "received_at": "2026-09-27T02:05:00.500Z",
+      "score": 10.3,
+      "payload_hash": "hash-09-1"
+    },
+    {
+      "event_id": "T09-s2",
+      "target_id": "T-09",
+      "athlete_id": "A-204",
+      "relay": 1,
+      "shot_seq": 2,
+      "device_time": "2026-09-27T02:35:00Z",
+      "received_at": "2026-09-27T02:35:00.500Z",
+      "score": 10.1,
+      "payload_hash": "hash-09-2"
+    },
+    {
+      "event_id": "T09-s3",
+      "target_id": "T-09",
+      "athlete_id": "A-204",
+      "relay": 1,
+      "shot_seq": 3,
+      "device_time": "2026-09-27T02:55:00Z",
+      "received_at": "2026-09-27T02:55:00.500Z",
+      "score": 9.9,
+      "payload_hash": "hash-09-3"
+    },
+    {
+      "event_id": "T09-s4",
+      "target_id": "T-09",
+      "athlete_id": "A-204",
+      "relay": 1,
+      "shot_seq": 4,
+      "device_time": "2026-09-27T03:15:00Z",
+      "received_at": "2026-09-27T03:15:00.500Z",
+      "score": 10.4,
+      "payload_hash": "hash-09-4"
+    },
+    {
+      "event_id": "T12-s1",
+      "target_id": "T-12",
+      "athlete_id": "A-318",
+      "relay": 1,
+      "shot_seq": 1,
+      "device_time": "2026-09-27T02:10:00Z",
+      "received_at": "2026-09-27T02:10:00.700Z",
+      "score": 10.1,
+      "payload_hash": "hash-12-1"
+    },
+    {
+      "event_id": "T12-s1",
+      "target_id": "T-12",
+      "athlete_id": "A-318",
+      "relay": 1,
+      "shot_seq": 1,
+      "device_time": "2026-09-27T02:10:00Z",
+      "received_at": "2026-09-27T03:06:10Z",
+      "score": 10.1,
+      "payload_hash": "hash-12-1"
+    },
+    {
+      "event_id": "T12-s2",
+      "target_id": "T-12",
+      "athlete_id": "A-318",
+      "relay": 1,
+      "shot_seq": 2,
+      "device_time": "2026-09-27T02:45:00Z",
+      "received_at": "2026-09-27T03:05:30Z",
+      "score": 10.2,
+      "payload_hash": "hash-12-2"
+    },
+    {
+      "event_id": "T12-s4",
+      "target_id": "T-12",
+      "athlete_id": "A-318",
+      "relay": 1,
+      "shot_seq": 4,
+      "device_time": "2026-09-27T02:55:00Z",
+      "received_at": "2026-09-27T03:05:31Z",
+      "score": 10.0,
+      "payload_hash": "hash-12-4"
+    },
+    {
+      "event_id": "T12-s3",
+      "target_id": "T-12",
+      "athlete_id": "A-318",
+      "relay": 1,
+      "shot_seq": 3,
+      "device_time": "2026-09-27T02:50:00Z",
+      "received_at": "2026-09-27T03:05:32Z",
+      "score": 10.4,
+      "payload_hash": "hash-12-3"
+    },
+    {
+      "event_id": "T12-s5",
+      "target_id": "T-12",
+      "athlete_id": "A-318",
+      "relay": 1,
+      "shot_seq": 5,
+      "device_time": "2026-09-27T03:10:00Z",
+      "received_at": "2026-09-27T03:10:02Z",
+      "score": 10.4,
+      "payload_hash": "hash-12-5a"
+    },
+    {
+      "event_id": "T12-s5",
+      "target_id": "T-12",
+      "athlete_id": "A-318",
+      "relay": 1,
+      "shot_seq": 5,
+      "device_time": "2026-09-27T03:10:00Z",
+      "received_at": "2026-09-27T03:10:50Z",
+      "score": 9.8,
+      "payload_hash": "hash-12-5b"
+    },
+    {
+      "event_id": "T12-s6",
+      "target_id": "T-12",
+      "athlete_id": "A-318",
+      "relay": 1,
+      "shot_seq": 6,
+      "device_time": "2026-09-27T03:20:00Z",
+      "received_at": "2026-09-27T03:20:02Z",
+      "score": 10.2,
+      "payload_hash": "hash-12-6"
+    },
+    {
+      "event_id": "T12-s8",
+      "target_id": "T-12",
+      "athlete_id": "A-318",
+      "relay": 1,
+      "shot_seq": 8,
+      "device_time": "2026-09-27T03:25:00Z",
+      "received_at": "2026-09-27T03:25:02Z",
+      "score": 10.3,
+      "payload_hash": "hash-12-8"
+    }
+  ],
+  "outages": [
+    {
+      "target_id": "T-12",
+      "started_at": "2026-09-27T02:40:00Z",
+      "recovered_at": "2026-09-27T03:05:00Z"
+    }
+  ],
+  "resets": [
+    {
+      "target_id": "T-09",
+      "reset_at": "2026-09-27T03:00:00Z",
+      "operator": "TO-203",
+      "reason": "时钟持续漂移，隔离后更换计时模块并重新授时"
+    }
+  ],
+  "reinstatements": [
+    {
+      "target_id": "T-09",
+      "at": "2026-09-27T03:06:00Z",
+      "official_id": "TO-203",
+      "note": "复位后连续同步偏差小于3ms，确认恢复使用"
+    }
+  ]
+}
